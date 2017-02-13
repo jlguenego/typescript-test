@@ -1,14 +1,14 @@
 {
     "compilerOptions": {
-        "strictNullChecks": false,
+        "strictNullChecks": true,
 		"compileOnSave": true,
 		"alwaysStrict": true,
-		"outFile": "tmp/test.js"
+		"outDir": "tmp"
     },
 	"include": [
         "app/**/*"
     ],
-    "exclude": [
+	"exclude": [
         "node_modules",
         "**/*.spec.ts"
     ]
