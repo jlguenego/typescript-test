@@ -7,8 +7,9 @@ function greeter(person: Person) {
     return "Hello, " + person.firstName;
 }
 
+
 var user : Person = {
-    firstName: 'Jean-Louis, François',
+    firstName: 'Jean-Louis, François, Philippe',
     lastName: 'GUENEGO'
 };
 

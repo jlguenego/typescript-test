@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "strictNullChecks": true,
+        "strictNullChecks": false,
 		"compileOnSave": true,
 		"alwaysStrict": true,
 		"outFile": "tmp/test.js"

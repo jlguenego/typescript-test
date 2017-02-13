@@ -1,5 +1,5 @@
 // Boolean test
-let isItTrue : boolean | undefined | null = false;
+let isItTrue : boolean = false;
 console.log('isItTrue', isItTrue);
 // undefined and null can be assigned to any type.
 isItTrue = undefined;
