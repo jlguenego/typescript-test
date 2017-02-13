@@ -1,0 +1,20 @@
+{
+  "name": "typescript-test",
+  "version": "0.0.1",
+  "description": "Typescript try",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "mkdir tmp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"01": "tsc --outFile tmp/test.js app/01_hello_world/test.ts && node tmp/test.js",
+	"02": "tsc --outFile tmp/test.js app/02_basic_types/basic_types.ts && node tmp/test.js"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Jean-Louis GUENEGO",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "2.1.6"
+  }
+}
