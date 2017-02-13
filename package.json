@@ -4,7 +4,6 @@
   "description": "Typescript try",
   "main": "index.js",
   "scripts": {
-    "postinstall": "mkdir tmp"
   },
   "keywords": [
     "typescript"

@@ -1,5 +1,5 @@
 // Boolean test
-let isItTrue : boolean = false;
+let isItTrue : boolean | undefined | null = false;
 console.log('isItTrue', isItTrue);
 // undefined and null can be assigned to any type.
 isItTrue = undefined;
@@ -62,4 +62,14 @@ let useless: void | null = undefined;
 useless = null;
 // error: useless = 0;
 
+
+// Test never and type assertion.
+function neverReturn() : never {
+	throw new Error('this is an error');
+}
+try {
+	neverReturn();
+} catch (e) {
+	console.log('error', (<Error>e).message);
+}
 
