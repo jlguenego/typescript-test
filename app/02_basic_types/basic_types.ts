@@ -1,6 +1,9 @@
 // Boolean test
-let isItTrue : boolean = false;
+let isItTrue : boolean | undefined | null = false;
 console.log('isItTrue', isItTrue);
+// undefined and null can be assigned to any type.
+isItTrue = undefined;
+isItTrue = null;
 
 // Number test
 let pi : number = 3.14;
@@ -42,6 +45,21 @@ let x : any = 'coucou';
 console.log('x', x);
 x = true;
 console.log('x', x);
-x = 13;
-console.log('x', x);
+x = 13.1234;
+console.log('x', x.toFixed(2));
+
+let y : Object = 3;
+// error: console.log('y', y.toFixed(2));
+
+// Test void
+function message(): void {
+    console.log('This is a message');
+}
+let c = message();
+console.log('c', c);
+
+let useless: void | null = undefined;
+useless = null;
+// error: useless = 0;
+
 

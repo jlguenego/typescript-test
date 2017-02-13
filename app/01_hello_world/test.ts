@@ -8,7 +8,7 @@ function greeter(person: Person) {
 }
 
 var user : Person = {
-    firstName: 'Jean-Louis',
+    firstName: 'Jean-Louis, François',
     lastName: 'GUENEGO'
 };
 
