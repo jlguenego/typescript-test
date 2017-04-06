@@ -1,8 +1,10 @@
 {
     "compilerOptions": {
+		"target": "es5",
         "strictNullChecks": true,
 		"compileOnSave": true,
 		"alwaysStrict": true,
+		"noImplicitAny": true,
 		"outDir": "tmp"
     },
 	"include": [
