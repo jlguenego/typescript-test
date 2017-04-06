@@ -52,4 +52,22 @@
 	var c: number = doOperation(plus, 2, 3);
 	console.log('c', c);
 
+	interface ClockInterface {
+		currentTime: Date;
+	}
+
+	class Clock implements ClockInterface {
+		currentTime: Date;
+		constructor(h: number, m: number) {
+			let today = new Date();
+			this.currentTime = new Date(today.getFullYear(), today.getMonth(), today.getDate(), h, m, 0);
+		}
+	}
+
+	let c1: Clock;
+	c1 = new Clock(13, 43);
+	console.log('c1', c1.currentTime);
+
+
+
 })();
